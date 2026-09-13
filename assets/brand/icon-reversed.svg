@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="GovHelm">
+  <title>GovHelm</title>
+  <!-- The GovHelm mark: a ship's helm. A ring, eight spokes crossing it (r=45 to
+       r=33, so they never touch the hub), and the hub at r=14. The spokes and hub
+       carry Helm Blue; the ring is Ink. An edition may recolour the spokes and
+       replace the hub with its own form — the ring never changes. -->
+  <circle cx="50" cy="50" r="38" fill="none" stroke="#FFFFFF" stroke-width="9"/>
+  <g stroke="#BFD3FF" stroke-width="9" stroke-linecap="round">
+    <line x1="50" y1="5" x2="50" y2="17"/>
+    <line x1="50" y1="83" x2="50" y2="95"/>
+    <line x1="5" y1="50" x2="17" y2="50"/>
+    <line x1="83" y1="50" x2="95" y2="50"/>
+    <line x1="18.2" y1="18.2" x2="26.7" y2="26.7"/>
+    <line x1="73.3" y1="73.3" x2="81.8" y2="81.8"/>
+    <line x1="18.2" y1="81.8" x2="26.7" y2="73.3"/>
+    <line x1="73.3" y1="26.7" x2="81.8" y2="18.2"/>
+  </g>
+  <circle cx="50" cy="50" r="14" fill="#BFD3FF"/>
+</svg>

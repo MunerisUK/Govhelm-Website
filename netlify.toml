@@ -1,0 +1,20 @@
+# Netlify build settings for the GovHelm site.
+#
+# There is no build step: every page is plain HTML served as-is, so the
+# repository root IS the publish directory and there is nothing to compile.
+#
+# This is declared here rather than left to the site's UI settings so that the
+# deploy is reproducible from the repository alone — a netlify.toml takes
+# precedence over the UI for the build command and publish directory, so a site
+# configured for a framework that this repo does not use cannot fail the deploy.
+
+[build]
+  # Explicitly the repository root. A base directory set in the UI that does not
+  # exist here would fail the deploy before the build even starts, and `publish`
+  # resolves relative to `base` — so this has to be pinned too, not just publish.
+  base = ""
+  # Not omitted: an omitted command falls back to the UI setting, and the point
+  # of this block is to override it. A no-op that always exits 0 says "static
+  # site" unambiguously.
+  command = "echo 'No build step: this site is plain HTML served as-is.'"
+  publish = "."
