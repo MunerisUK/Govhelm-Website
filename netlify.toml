@@ -9,6 +9,10 @@
 # configured for a framework that this repo does not use cannot fail the deploy.
 
 [build]
+  # Explicitly the repository root. A base directory set in the UI that does not
+  # exist here would fail the deploy before the build even starts, and `publish`
+  # resolves relative to `base` — so this has to be pinned too, not just publish.
+  base = ""
   # Not omitted: an omitted command falls back to the UI setting, and the point
   # of this block is to override it. A no-op that always exits 0 says "static
   # site" unambiguously.
